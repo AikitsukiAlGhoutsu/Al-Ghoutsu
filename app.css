@@ -1,73 +1,95 @@
-body {
-    background-color: #1a1a2e;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+    <style>
+        body {
+			background-color: #1a1a2e;
+			color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #007BFF, #1a1a2e);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .biodata {
+            flex: 2;
+            padding: 20px;
+        }
+        .biodata h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+        .biodata p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .biodata strong {
+            color: #007BFF;
+        }
+        .biodata img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 5px solid #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .decoration {
+            width: 10px;
+            background: linear-gradient(180deg, #007BFF, #00d4ff);
+            border-radius: 10px;
+            margin: 0 20px;
+        }
+        .container:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .decoration {
+                height: 5px;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
 
-.container {
-    display: flex;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #007BFF, #1a1a2e);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
+    <div class="container">
+        <div class="biodata">
+            <h1>Biodata Pribadi</h1>
 
-.biodata {
-    flex: 2;
-    padding: 20px;
-}
+            <img src="2.jpg" alt="Foto Profil" class="profile-pic">
 
-.biodata h1 {
-    color: #ffffff;
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-}
+            <p><strong>Nama:</strong> Fathurahman Al Ghoutsu</p>
+            <p><strong>Tempat, Tanggal Lahir:</strong> Bandar Lampung, 06/09/2023</p>
+            <p><strong>Alamat:</strong> Jl. Pulau Buton Raya No.21 RT 006 RW 000</p>
+            <p><strong>Telepon:</strong> 085709822321</p>
+            <p><strong>Email:</strong> ghoutsual@gmail.com</p>
+            <p><strong>Pendidikan:</strong> S1 Teknik Geoamtika - On Going</p>
+            <p><strong>Keahlian:</strong> GIS Analyst, Remote Sensing Analyst, Survey Mapping</p>
+        </div>
 
-.biodata p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
+        <div class="decoration"></div>
+    </div>
 
-.biodata strong {
-    color: #007BFF;
-}
-
-.biodata img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px auto;
-    border: 5px solid #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.decoration {
-    width: 10px;
-    background: linear-gradient(180deg, #007BFF, #00d4ff);
-    border-radius: 10px;
-    margin: 0 20px;
-}
-
-.container:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .decoration {
-        height: 5px;
-        width: 100%;
-        margin: 20px 0;
-    }
-}
+</body>
+</html>
